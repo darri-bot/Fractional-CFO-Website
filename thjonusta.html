@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fjármálastýring ehf.</title>
+  <title>Fjármálastýring ehf. | Þjónusta</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -16,16 +16,16 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="nav-card">
-      <a href="index.html" class="nav-logo">
+      <a href="/heim" class="nav-logo">
         <img src="Logo/fjarmalastyring_logo.png" alt="Fjármálastýring" />
       </a>
       <div class="nav-right">
         <nav class="nav-links">
-          <a href="index.html" class="active">Heim</a>
-          <a href="services.html">Þjónusta</a>
-          <a href="about.html">Um mig</a>
+          <a href="/heim">Heim</a>
+          <a href="/thjonusta" class="active">Þjónusta</a>
+          <a href="/um-mig">Um mig</a>
         </nav>
-        <a href="#samband" class="btn btn-primary">Hafa Samband</a>
+        <a href="/heim-samband" class="btn btn-primary">Hafa Samband</a>
       </div>
       <button class="hamburger" id="hamburger" aria-label="Opna valmynd" aria-expanded="false">
         <span></span>
@@ -34,31 +34,42 @@
       </button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html">Heim</a>
-      <a href="services.html">Þjónusta</a>
-      <a href="about.html">Um mig</a>
-      <a href="#samband" class="btn btn-primary mobile-cta">Hafa Samband</a>
+      <a href="/heim">Heim</a>
+      <a href="/thjonusta">Þjónusta</a>
+      <a href="/um-mig">Um mig</a>
+      <a href="/heim-samband" class="btn btn-primary mobile-cta">Hafa Samband</a>
     </div>
   </header>
 
   <main>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-text">
-        <h1>Hvað er fjármálastjóri í hlutastarfi?</h1>
-        <p class="lead">Bókarar og endurskoðendur skoða fjárhagslega fortíð fyrirtækisins. Fjármálastjóri í hlutastarfi einbeitir sér að fjárhagslegri framtíð þess, hjálpar þér að taka upplýstar og stefnumarkandi ákvarðanir um næstu skref í rekstrinum.</p>
-        <p class="checklist-heading">Þessu máttu búast við:</p>
-        <ul class="checklist">
-          <li>Skýr fjárhagsleg markmið fyrirtækisins: skilgreining á markmiðum til skemmri og lengri tíma.</li>
-          <li>Fjárhagsspár og áætlanir: fyrirséð fjárhagsleg niðurstaða svo þú getir skipulagt af öryggi.</li>
-          <li>Ábyrgð og aðhald: við veitum aðhald og umgjörð sem tryggir að markmiðunum er náð.</li>
-          <li>Skjót samskipti og stuðningur: þú færð svar fljótt.</li>
-          <li>Stefnumótun og aðgerðaráætlun til að ná markmiðum: áherslur næsta ársfjórðungs, markmið til 1–3 ára og framtíðarsýn til 5 ára.</li>
-          <li>Stefnubreytingar í rauntíma: mánaðarlegur stuðningur, aðgerðaráætlanir og endurskoðun byggð á rauntímagögnum og rekstrarumhverfi.</li>
-        </ul>
+    <!-- SERVICES CONTENT -->
+    <section class="services-hero">
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3 class="faq-question">Hvað gerir fjármálastjóri í hlutastarfi?</h3>
+          <p class="faq-answer">Fjármálastjóri í hlutastarfi hjálpar þér að taka upplýstar ákvarðanir um framtíð rekstrarins með mánaðarlegum greiningum, spám og áætlunum, og reglulegum samtölum þar sem tölurnar eru þýddar yfir í aðgerðir.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Hvernig virkar þjónustan?</h3>
+          <p class="faq-answer">Við hefjum samstarfið með ítarlegri úttekt þar sem ég kynnist fyrirtækinu þínu og teyminu, set mig inn í markmiðin þín, fer yfir fjárhagslega frammistöðu liðinna mánaða og bý til fyrstu spár og áætlanir. Í lok þessa fasa hefur þú skýra mynd af því hvar fyrirtækið stendur og hvert það er að fara.</p>
+          <p class="faq-answer">Eftir úttektina tekur við reglulegt samstarf, sniðið að þínum rekstri. Saman þróum við og framkvæmum aðgerðir sem færa þig nær markmiðunum.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Hvenær hentar að ráða fjármálastjóra í hlutastarfi?</h3>
+          <p class="faq-answer">Þjónustan hentar litlum og meðalstórum fyrirtækjum sem eru orðin of flókin fyrir eigendur að halda utan um fjárhaginn samhliða daglegum rekstri en eru ekki nógu stór til að réttlæta fjármálastjóra í fullu starfi.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Hver er munurinn á bókara/endurskoðanda og fjármálastjóra í hlutastarfi?</h3>
+          <p class="faq-answer">Bókarar og endurskoðendur sjá um bókhald, launavinnslu, ársreikninga og skattframtöl. Þeir segja þér hvað gerðist í fortíðinni.</p>
+          <p class="faq-answer">Fjármálastjóri vinnur með framtíðina: greinir reksturinn mánaðarlega, gerir spár og áætlanir, og smíðar aðgerðir til að ná markmiðum. Bókhaldið segir hvað gerðist en fjármálastjórinn hjálpar þér að hafa áhrif á það sem gerist næst.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Hvað kostar fjármálastjóri í hlutastarfi?</h3>
+          <p class="faq-answer">Verðið er háð umfangi, en algengt er að fjármálastjóri í hlutastarfi kosti á bilinu 20–40% af heildarkostnaði fjármálastjóra í fullu starfi. Þú færð sérfræðiþekkingu án þess að bæta við þig stöðugildi.</p>
+        </div>
       </div>
-      <div class="hero-photo">
+      <div class="services-photo">
         <img src="Picture/Darri Home Page - White Background 2.jpg" alt="Darri Hilmarsson, fjármálastjóri í hlutastarfi" />
       </div>
     </section>
