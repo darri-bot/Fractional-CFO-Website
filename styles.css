@@ -573,3 +573,7 @@ ul { list-style: none; }
   .purpose-text { font-size: 18px; }
   .footer-inner { padding: 0 24px; }
 }
+@media (max-width: 400px) {
+  .nav-logo img { height: 36px; }
+  .nav-card { padding: 8px 10px 8px 14px; }
+}
