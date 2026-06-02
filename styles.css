@@ -174,13 +174,15 @@ ul { list-style: none; }
   margin: 0 auto;
   padding: 80px 24px 88px;
 }
-.hero-text h1 {
-  font-size: 50px;
+.hero-text h1,
+.about-bio h1 {
   font-weight: 700;
   color: var(--text);
   line-height: 1.1;
   margin-bottom: 22px;
 }
+.hero-text h1 { font-size: 50px; }
+.about-bio h1 { font-size: 43px; }
 .lead {
   color: var(--muted);
   font-size: 18px;
@@ -223,6 +225,9 @@ ul { list-style: none; }
   width: 100%;
   border-radius: 20px;
   box-shadow: 0 12px 48px rgba(43, 108, 176, 0.10);
+}
+.hero-name {
+  display: none;
 }
 
 /* ── CALL TO ACTION ─────────────────────────────────── */
@@ -524,6 +529,7 @@ ul { list-style: none; }
   .cta-inner h2 {
     font-size: 38px;
   }
+  .about-bio h1 { font-size: 32px; }
 }
 @media (max-width: 960px) {
   .hero {
@@ -533,6 +539,14 @@ ul { list-style: none; }
   }
   .hero-photo { order: -1; }
   .hero-photo img { max-width: 460px; margin: 0 auto; }
+  .hero-name {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-top: 14px;
+  }
   .services-hero,
   .about-hero {
     grid-template-columns: 1fr;
@@ -569,6 +583,7 @@ ul { list-style: none; }
 @media (max-width: 640px) {
   .hero-text h1,
   .cta-inner h2 { font-size: 31px; }
+  .about-bio h1 { font-size: 26px; }
   .values-grid { grid-template-columns: 1fr; }
   .purpose-text { font-size: 18px; }
   .footer-inner { padding: 0 24px; }
