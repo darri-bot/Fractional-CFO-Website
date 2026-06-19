@@ -1,0 +1,65 @@
+<svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg" font-family="Inter, Arial, sans-serif">
+  <defs>
+    <radialGradient id="faceGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f0f0f0"/>
+    </radialGradient>
+    <radialGradient id="rimGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#e0e0e0"/>
+      <stop offset="100%" style="stop-color:#b0b0b0"/>
+    </radialGradient>
+    <radialGradient id="capGrad" cx="40%" cy="35%" r="60%">
+      <stop offset="0%" style="stop-color:#d8d8d8"/>
+      <stop offset="100%" style="stop-color:#888888"/>
+    </radialGradient>
+    <filter id="dropShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#00000044"/>
+    </filter>
+    <filter id="needleShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000066"/>
+    </filter>
+  </defs>
+
+  <!-- Outer rim (silver) -->
+  <circle cx="300" cy="300" r="265" fill="url(#rimGrad)" filter="url(#dropShadow)"/>
+  <circle cx="300" cy="300" r="248" fill="#cccccc"/>
+
+  <!-- cx=300, cy=300, r=230 -->
+  <!-- Points: 180°=(70,300), 150°=(101,185), 120°=(185,101), 90°=(300,70), 60°=(415,101), 30°=(499,185), 0°=(530,300) -->
+
+  <!-- S1: 180–150: Mjög slæmt (red) -->
+  <path d="M 70 300 A 230 230 0 0 1 101 185" stroke="#c0392b" stroke-width="48" fill="none" stroke-linecap="butt"/>
+  <!-- S2: 150–120: Slæmt (dark orange) -->
+  <path d="M 101 185 A 230 230 0 0 1 185 101" stroke="#d35400" stroke-width="48" fill="none" stroke-linecap="butt"/>
+  <!-- S3: 120–90: Meðal (mid green) -->
+  <path d="M 185 101 A 230 230 0 0 1 300 70" stroke="#f0b429" stroke-width="48" fill="none" stroke-linecap="butt"/>
+  <!-- S4: 90–60: Gott (green) -->
+  <path d="M 300 70 A 230 230 0 0 1 415 101" stroke="#27ae60" stroke-width="48" fill="none" stroke-linecap="butt"/>
+  <!-- S5: 60–30: Mjög gott (cobalt) -->
+  <path d="M 415 101 A 230 230 0 0 1 499 185" stroke="#1565C0" stroke-width="48" fill="none" stroke-linecap="butt"/>
+  <!-- S6: 30–0: Frábært (navy) -->
+  <path d="M 499 185 A 230 230 0 0 1 530 300" stroke="#1a2f5a" stroke-width="48" fill="none" stroke-linecap="butt"/>
+
+  <!-- White dial face -->
+  <circle cx="300" cy="300" r="178" fill="url(#faceGrad)"/>
+
+  <!-- Labels inside arc -->
+  <text x="78" y="225" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(-75 78 225)">Mjög slæmt</text>
+  <text x="137" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(-45 137 142)">Slæmt</text>
+  <text x="242" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(-15 242 82)">Meðal</text>
+  <text x="358" y="82" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(15 358 82)">Gott</text>
+  <text x="463" y="142" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(45 463 142)">Mjög gott</text>
+  <text x="522" y="225" text-anchor="middle" font-size="11" font-weight="700" fill="#ffffff" transform="rotate(75 522 225)">Frábært</text>
+
+  <!-- SKOR text -->
+  <text x="300" y="255" text-anchor="middle" font-size="42" font-weight="700" fill="#555555" letter-spacing="6">SKOR</text>
+
+  <!-- Needle pointing to Frábært (~15°) -->
+  <polygon points="300,288 300,312 478,252" fill="#1a2f5a" filter="url(#needleShadow)"/>
+  <polygon points="300,295 478,252 300,300" fill="#2B6CB0" opacity="0.4"/>
+
+  <!-- Center pivot cap -->
+  <circle cx="300" cy="300" r="28" fill="url(#capGrad)" filter="url(#dropShadow)"/>
+  <circle cx="300" cy="300" r="16" fill="#dddddd"/>
+  <circle cx="300" cy="300" r="7" fill="#999999"/>
+</svg>
