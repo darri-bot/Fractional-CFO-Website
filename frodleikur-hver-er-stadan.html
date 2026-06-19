@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fjármálastýring ehf. | Hafa Samband</title>
-  <meta name="description" content="Hafðu samband við Fjármálastýringu ehf. Leigðu fjármálastjóra í áskrift og fáðu sérfræðiþekkingu fjármálastjóra án stöðugildis." />
+  <title>Fjármálastýring ehf. | Hver er staðan?</title>
+  <meta name="description" content="Flestir fyrirtækjaeigendur skoða fjármálin einu sinni á ári. Eina leiðin til að geta stýrt skipinu í rétta átt er að skoða fjármálin mánaðarlega." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -24,7 +24,7 @@
         <nav class="nav-links">
           <a href="/heim">Heim</a>
           <a href="/thjonusta">Þjónusta</a>
-          <a href="/frodleikur">Fróðleikur</a>
+          <a href="/frodleikur" class="active">Fróðleikur</a>
           <a href="/um-mig">Um mig</a>
         </nav>
         <a href="/heim-samband" class="btn btn-primary">Hafa Samband</a>
@@ -46,41 +46,21 @@
 
   <main>
 
-    <!-- CALL TO ACTION -->
-    <section class="cta-section" id="samband">
-      <div class="cta-inner">
-        <h2>Hafa samband</h2>
-        <form class="cta-form" id="contactForm" action="https://formspree.io/f/mvzyverp" method="POST" novalidate>
-          <div class="form-field">
-            <label for="nafn">Nafn <span class="required-dot">*</span></label>
-            <input type="text" id="nafn" name="nafn" />
-            <span class="form-error" id="nafn-error">Vinsamlegast fylltu inn nafn.</span>
-          </div>
-          <div class="form-field">
-            <label for="simi">Símanúmer</label>
-            <input type="tel" id="simi" name="simi" />
-          </div>
-          <div class="form-field">
-            <label for="netfang">Netfang <span class="required-dot">*</span></label>
-            <input type="email" id="netfang" name="netfang" />
-            <span class="form-error" id="netfang-error">Vinsamlegast fylltu inn gilt netfang.</span>
-          </div>
-          <div class="form-field">
-            <label for="fyrirtaeki">Fyrirtæki</label>
-            <input type="text" id="fyrirtaeki" name="fyrirtaeki" />
-          </div>
-          <div class="form-field">
-            <label for="skilabod">Skilaboð <span class="required-dot">*</span></label>
-            <textarea id="skilabod" name="skilabod" rows="5"></textarea>
-            <span class="form-error" id="skilabod-error">Vinsamlegast fylltu inn skilaboð.</span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-senda">Senda</button>
-        </form>
-        <div class="form-success" id="formSuccess">
-          <p>Takk fyrir! Við munum hafa samband við þig fljótlega.</p>
-        </div>
+    <!-- ARTICLE -->
+    <article class="article-page">
+      <a href="/frodleikur" class="article-back">← Fróðleikur</a>
+      <h1>Hver er staðan?</h1>
+      <div class="article-body">
+        <p>Þetta er spurningin sem ég spyr fyrirtækjaeigendur sem ég hitti í fyrsta skipti og þeir horfa á mig oftast sem eitt spurningamerki.</p>
+        <p>Allir fyrirtækjaeigendur sem ég hef hitt hafa ástríðu fyrir því að veita góða þjónustu en þeir hafa sjaldan ástríðu fyrir fjármálum og bókhaldi.</p>
+        <p>Flestir fyrirtækjaeigendur skoða fjármálin einu sinni á ári þegar bókhaldsstofan afhendir þeim ársreikninginn fyrir síðasta ár.</p>
+        <p>Ársreikningur kemur oftast í hendurnar á stjórnendum í september, 9 mánuðum eftir að árið kláraðist.</p>
+        <p>Þá kemur í ljós hver er staðan og þá átta menn á sig hvernig gekk á síðasta ári. Stjórnendur vita þá hver staðan er og vita oftast ekki almennilega hvað þeir eiga gera við þessar upplýsingar.</p>
+        <p>Þá er alltof seint að bregðast við þar sem árið kláraðist fyrir 9 mánuðum síðan. Þetta fyrirkomulag gengur engan veginn fyrir flest fyrirtæki þar sem er orðið flækjustig í rekstrinum.</p>
+        <p>Eina leiðin til að geta brugðist við og stýrt skipinu í rétta átt er að gera upp bókhaldið og skoða fjármálin mánaðarlega. 💪</p>
+        <p>Annars þarftu að bíða til september 😁</p>
       </div>
-    </section>
+    </article>
 
   </main>
 
@@ -134,63 +114,6 @@
         mobileMenu.classList.remove('open');
         hamburger.classList.remove('open');
         hamburger.setAttribute('aria-expanded', false);
-      });
-    });
-
-    function clearError(fieldId) {
-      document.getElementById(fieldId).classList.remove('input-error');
-      document.getElementById(fieldId + '-error').classList.remove('visible');
-    }
-    document.getElementById('nafn').addEventListener('input', function () { clearError('nafn'); });
-    document.getElementById('netfang').addEventListener('input', function () { clearError('netfang'); });
-    document.getElementById('skilabod').addEventListener('input', function () { clearError('skilabod'); });
-
-    document.getElementById('contactForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      const nafnEl     = document.getElementById('nafn');
-      const netfangEl  = document.getElementById('netfang');
-      const skilabodEl = document.getElementById('skilabod');
-      const nafn       = nafnEl.value.trim();
-      const netfang    = netfangEl.value.trim();
-      const simi       = document.getElementById('simi').value.trim();
-      const fyrirtaeki = document.getElementById('fyrirtaeki').value.trim();
-      const skilabod   = skilabodEl.value.trim();
-      const emailRe    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-      let valid = true;
-
-      if (!nafn) {
-        nafnEl.classList.add('input-error');
-        document.getElementById('nafn-error').classList.add('visible');
-        valid = false;
-      }
-      if (!netfang || !emailRe.test(netfang)) {
-        netfangEl.classList.add('input-error');
-        document.getElementById('netfang-error').textContent = !netfang
-          ? 'Vinsamlegast fylltu inn netfang.'
-          : 'Vinsamlegast sláðu inn gilt netfang.';
-        document.getElementById('netfang-error').classList.add('visible');
-        valid = false;
-      }
-      if (!skilabod) {
-        skilabodEl.classList.add('input-error');
-        document.getElementById('skilabod-error').classList.add('visible');
-        valid = false;
-      }
-
-      if (!valid) return;
-
-      const form = document.getElementById('contactForm');
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (response) {
-        if (response.ok) {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').style.display = 'block';
-        }
       });
     });
   </script>

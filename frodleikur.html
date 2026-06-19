@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fjármálastýring ehf. | Um mig – Fjármálastjóri í áskrift</title>
-  <meta name="description" content="Darri Hilmarsson, reynður fjármálastjóri í áskrift. Starfaði sem fjármálastjóri hjá alþjóðlegum fyrirtækjum á Íslandi og í Svíþjóð. BSc í fjármálaverkfræði og MS í hagfræði." />
+  <title>Fjármálastýring ehf. | Fróðleikur</title>
+  <meta name="description" content="Pælingar og innsýn um fjármálastjórnun og rekstur fyrirtækja frá Fjármálastýringu ehf." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
@@ -24,8 +24,8 @@
         <nav class="nav-links">
           <a href="/heim">Heim</a>
           <a href="/thjonusta">Þjónusta</a>
-          <a href="/frodleikur">Fróðleikur</a>
-          <a href="/um-mig" class="active">Um mig</a>
+          <a href="/frodleikur" class="active">Fróðleikur</a>
+          <a href="/um-mig">Um mig</a>
         </nav>
         <a href="#samband" class="btn btn-primary">Hafa Samband</a>
       </div>
@@ -46,57 +46,16 @@
 
   <main>
 
-    <!-- BIO -->
-    <section class="about-hero">
-      <div class="about-bio">
-        <h1>Darri Hilmarsson</h1>
-        <p>Ég stofnaði Fjármálastýringu ehf. vegna þess að mörg lítil og meðalstór fyrirtæki standa frammi fyrir sömu áskoruninni: þau hafa góða vöru, duglegt fólk og raunverulegan rekstur en skortir skýra yfirsýn yfir fjárhaginn. Eigendurnir vita hvað gerðist í fyrra, en ekki hvert þau eru að fara. Markmið mitt er einfalt: að hjálpa fyrirtækjum að skilja reksturinn nógu vel til að taka ákvarðanir með vissu og ná þeim árangri sem þau stefna að.</p>
-        <p>Áður en ég stofnaði fyrirtækið starfaði ég hjá alþjóðlegum fyrirtækjum á Íslandi og í Svíþjóð, meðal annars í flutningum og fasteignum. Þar vann ég við arðsemisgreiningar, fjárhagsáætlanir, sjóðstreymisstýringu og rekstrarumbætur, verkefni sem snúast öll um sama hlutinn: að breyta tölum í ákvarðanir sem skila árangri.</p>
-        <p>Ég er með BSc í fjármálaverkfræði frá Háskólanum í Reykjavík og MS í hagfræði frá Háskóla Íslands. Sú blanda verkfræðileg nákvæmni og hagfræðileg sýn á val og afleiðingar er sá grunnur sem ég byggi vinnu mína á.</p>
-      </div>
-      <div class="services-photo">
-        <img src="Picture/Darri About Me- White Background.jpg" alt="Darri Hilmarsson, fjármálastjóri í áskrift" />
-      </div>
-    </section>
-
-    <!-- VALUES -->
-    <section class="values-section">
-      <div class="values-inner">
-        <p class="purpose-label" style="text-align:center; margin-bottom:24px;">Gildi Fyrirtækisins</p>
-        <div class="values-grid">
-          <div class="value-card">
-            <h3>Heilindi</h3>
-            <ul>
-              <li>Að standa við sín loforð.</li>
-              <li>Að hafa hugrekki til að segja sannleikann, líka þegar hann er óþægilegur.</li>
-              <li>Að hafa auðmýkt til að viðurkenna mistök.</li>
-            </ul>
-          </div>
-          <div class="value-card">
-            <h3>Ábyrgð</h3>
-            <ul>
-              <li>Að eigna sér niðurstöðurnar, ekki bara ráðgjöfina.</li>
-              <li>Að mæta á staðinn þegar á reynir, ekki bara þegar vel gengur.</li>
-              <li>Að bera ábyrgð á eigin orðum og gjörðum.</li>
-            </ul>
-          </div>
-          <div class="value-card">
-            <h3>Framför</h3>
-            <ul>
-              <li>Að hafa forvitni til að leita að betri leiðum.</li>
-              <li>Að gera hlutina aðeins betur í dag en í gær.</li>
-              <li>Að mæla árangurinn í virði fyrir viðskiptavininn.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PURPOSE -->
-    <section class="purpose-section">
-      <div class="purpose-inner">
-        <p class="purpose-label">Tilgangur fyrirtækisins</p>
-        <p class="purpose-text">Tilgangur okkar er að veita fyrirtækjum fjárhagslega innsýn svo þau geti tekið ákvarðanir og gripið til aðgerða sem skila þeim að markmiðum sínum.</p>
+    <!-- ARTICLES -->
+    <section class="frodleikur-section">
+      <h1 class="frodleikur-heading">Fróðleikur</h1>
+      <div class="articles-grid">
+        <a href="/frodleikur-hver-er-stadan" class="article-card">
+          <img src="Picture/Skor.svg" class="article-card-img" alt="Skor mælikvarði" />
+          <h2 class="article-title">Hver er staðan?</h2>
+          <p class="article-excerpt">Þetta er spurningin sem ég spyr fyrirtækjaeigendur sem ég hitti í fyrsta skipti og þeir horfa á mig oftast sem eitt spurningamerki.</p>
+          <span class="article-read-more">Lesa meira →</span>
+        </a>
       </div>
     </section>
 
@@ -209,51 +168,26 @@
 
     document.getElementById('contactForm').addEventListener('submit', function (e) {
       e.preventDefault();
-
       const nafnEl     = document.getElementById('nafn');
       const netfangEl  = document.getElementById('netfang');
       const skilabodEl = document.getElementById('skilabod');
       const nafn       = nafnEl.value.trim();
       const netfang    = netfangEl.value.trim();
-      const simi       = document.getElementById('simi').value.trim();
-      const fyrirtaeki = document.getElementById('fyrirtaeki').value.trim();
       const skilabod   = skilabodEl.value.trim();
       const emailRe    = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
       let valid = true;
-
-      if (!nafn) {
-        nafnEl.classList.add('input-error');
-        document.getElementById('nafn-error').classList.add('visible');
-        valid = false;
-      }
+      if (!nafn) { nafnEl.classList.add('input-error'); document.getElementById('nafn-error').classList.add('visible'); valid = false; }
       if (!netfang || !emailRe.test(netfang)) {
         netfangEl.classList.add('input-error');
-        document.getElementById('netfang-error').textContent = !netfang
-          ? 'Vinsamlegast fylltu inn netfang.'
-          : 'Vinsamlegast sláðu inn gilt netfang.';
+        document.getElementById('netfang-error').textContent = !netfang ? 'Vinsamlegast fylltu inn netfang.' : 'Vinsamlegast sláðu inn gilt netfang.';
         document.getElementById('netfang-error').classList.add('visible');
         valid = false;
       }
-      if (!skilabod) {
-        skilabodEl.classList.add('input-error');
-        document.getElementById('skilabod-error').classList.add('visible');
-        valid = false;
-      }
-
+      if (!skilabod) { skilabodEl.classList.add('input-error'); document.getElementById('skilabod-error').classList.add('visible'); valid = false; }
       if (!valid) return;
-
       const form = document.getElementById('contactForm');
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' }
-      }).then(function (response) {
-        if (response.ok) {
-          form.style.display = 'none';
-          document.getElementById('formSuccess').style.display = 'block';
-        }
-      });
+      fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+        .then(function (response) { if (response.ok) { form.style.display = 'none'; document.getElementById('formSuccess').style.display = 'block'; } });
     });
   </script>
 
