@@ -610,6 +610,12 @@ ul { list-style: none; }
   line-height: 1.1;
   margin-bottom: 44px;
 }
+.article-hero-img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 44px;
+}
 .article-body {
   display: flex;
   flex-direction: column;
@@ -619,6 +625,34 @@ ul { list-style: none; }
   font-size: 18px;
   color: var(--muted);
   line-height: 1.7;
+}
+.article-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.article-list li {
+  padding-left: 20px;
+  position: relative;
+}
+.article-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+}
+.article-list li {
+  font-size: 18px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.article-closing {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.6;
 }
 
 /* ── RESPONSIVE ─────────────────────────────────────── */
