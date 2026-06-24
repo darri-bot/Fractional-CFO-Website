@@ -560,6 +560,7 @@ ul { list-style: none; }
   object-fit: cover;
   border-radius: 8px;
   display: block;
+  background: white;
 }
 .article-tag {
   font-size: 13px;
