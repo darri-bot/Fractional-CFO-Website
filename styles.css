@@ -562,6 +562,10 @@ ul { list-style: none; }
   display: block;
   background: white;
 }
+.article-card-img--noframe {
+  border-radius: 0;
+  box-shadow: none;
+}
 .article-tag {
   font-size: 13px;
   font-weight: 700;
