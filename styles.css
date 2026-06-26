@@ -622,7 +622,8 @@ ul { list-style: none; }
 .article-img-bottom {
   margin-top: 44px;
   margin-bottom: 0;
-  box-shadow: 0 8px 32px rgba(43, 108, 176, 0.10);
+  border-radius: 0;
+  box-shadow: none;
 }
 .article-body {
   display: flex;
