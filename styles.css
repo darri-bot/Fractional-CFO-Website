@@ -656,6 +656,16 @@ ul { list-style: none; }
   left: 0;
   color: var(--blue);
 }
+ol.article-list {
+  padding-left: 24px;
+  list-style: decimal;
+}
+ol.article-list li {
+  padding-left: 4px;
+}
+ol.article-list li::before {
+  display: none;
+}
 .article-list li {
   font-size: 18px;
   color: var(--muted);
