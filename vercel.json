@@ -1,6 +1,75 @@
 {
   "cleanUrls": true,
   "redirects": [
-    { "source": "/", "destination": "/heim", "permanent": true }
+    {
+      "source": "/",
+      "destination": "/heim",
+      "permanent": true
+    },
+    {
+      "source": "/frodleikur-allt-er-mikilvaegt",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-askriftir",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-bokfaersla-greining",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-framurskarandi-thjonusta",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-handbremsa",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-hnefaleikur",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-hvirfilbylurinn",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-lidsmadur",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-oryggismork",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-peningar-moguleikar",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-pollyonnu-hugarfarid",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-reynsla-hugarfar",
+      "destination": "/frodleikur",
+      "permanent": false
+    },
+    {
+      "source": "/frodleikur-tungumal-fyrirtaekjarekstrar",
+      "destination": "/frodleikur",
+      "permanent": false
+    }
   ]
 }
